@@ -22,8 +22,7 @@ const Step1 = ({goToStep}) => {
             }}
         >
             <div style={{display: "flex", width: "100%", flexDirection: "column", alignItems: "center", marginTop: 47, textAlign: "center"}}>
-                {user?.username && <TgNickname nickname={user.username}/>}
-                <TgNickname nickname={'Norbee'}/>
+                {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 14}}>
                     Добро пожаловать!
                 </div>
