@@ -21,7 +21,7 @@ const Step1 = ({goToStep}) => {
                 overflow: "auto",
             }}
         >
-            <div style={{display: "flex", width: "100%", flexDirection: "column", alignItems: "center", marginTop: 5, textAlign: "center"}}>
+            <div style={{display: "flex", width: "100%", flexDirection: "column", alignItems: "center", marginTop: 10, textAlign: "center"}}>
                 {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 14}}>
                     Добро пожаловать!

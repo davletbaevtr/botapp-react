@@ -33,7 +33,7 @@ const Main = () => {
     return (
         <div style={{
             background: `linear-gradient(${LIGHT_GRAY} 0%, ${LIGHT_GRAY} 30%,  ${BACKGROUND_BLUE} 80%, ${BACKGROUND_BLUE} 100%)`,
-            height: "calc(100lvh - 87px)",
+            height: "calc(100svh - 87px)",
         }}>
             {renderCurrentPage()}
         </div>
