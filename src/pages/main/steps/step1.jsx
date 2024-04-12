@@ -42,7 +42,7 @@ const Step1 = ({goToStep}) => {
                         в <span style={{color: BLUE, fontWeight: 500}}>WebApps</span> - приложение
                     </div>
                     <div>
-                        Внутри приложения
+                        внутри приложения
                     </div>
                 </div>
             </div>
