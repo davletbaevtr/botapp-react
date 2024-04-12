@@ -13,8 +13,8 @@ const Main = () => {
         switch (currentPage) {
             case 1:
                 return <Step1 goToStep={goToStep}/>;
-            // case 2:
-            //     return <Step2 goToStep={goToStep}/>;
+            case 2:
+                return <Step2 goToStep={goToStep}/>;
             // case 3:
             //     return <Step3 goToStep={goToStep}/>;
             // case 4:

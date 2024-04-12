@@ -4,6 +4,8 @@ import card from '../../../assets/main/step1_icons/card.png'
 import note from '../../../assets/main/step1_icons/note.png'
 import clock from '../../../assets/main/step1_icons/clock.png'
 import wifi from '../../../assets/main/step1_icons/wifi.png'
+import topElliplse from '../../../assets/main/step1_icons/top_ellipse.png'
+import bottomElliplse from '../../../assets/main/step1_icons/bottom_ellipse.png'
 import MyButton from "../../../components/UI/MyButton";
 import {useTelegram} from "../../../hooks/useTelegram";
 import TgNickname from "../../../components/UI/TgNickname";
@@ -61,6 +63,7 @@ const Step1 = ({goToStep}) => {
                             objectFit: 'contain',
                             overflowClipMargin: 'content-box',
                             overflow: "clip",
+                            zIndex: 2
                         }}
                         src={phone} alt={'phone'}
                     />
@@ -69,33 +72,48 @@ const Step1 = ({goToStep}) => {
                 <img
                     width={118}
                     height={'auto'}
-                    style={{position: "absolute", top: 160, left: 0}}
+                    style={{position: "absolute", top: 160, left: 0, zIndex: 2}}
                     src={card}
                     alt={'card'}
                 />
                 <img
                     width={75}
                     height={'auto'}
-                    style={{position: "absolute", top: 25, left: 18}}
+                    style={{position: "absolute", top: 25, left: 18, zIndex: 2}}
                     src={clock}
                     alt={'clock'}
                 />
                 <img
                     width={107}
                     height={'auto'}
-                    style={{position: "absolute", top: 0, right: 15}}
+                    style={{position: "absolute", top: 0, right: 15, zIndex: 2}}
                     src={wifi}
                     alt={'wifi'}
                 />
                 <img
                     width={80}
                     height={'auto'}
-                    style={{position: "absolute", top: 75, right: 0}}
+                    style={{position: "absolute", top: 75, right: 0, zIndex: 2}}
                     src={note}
                     alt={'note'}
                 />
+                <img
+                    width={"100%"}
+                    style={{position: 'absolute', top: 60, zIndex: 1}}
+                    src={topElliplse}
+                    alt={'top ellipse'}
+                />
+                <img
+                    width={"100%"}
+                    style={{position: 'absolute', top: 150, zIndex: 1}}
+                    src={bottomElliplse}
+                    alt={'bottom ellipse'}
+                />
 
-                <MyButton style={{marginTop: 10, zIndex: 2, marginBottom: 10}}>
+                <MyButton
+                    style={{marginTop: 10, zIndex: 2, marginBottom: 10}}
+                    onClick={() => goToStep(2)}
+                >
                     Изучить WebApps
                 </MyButton>
             </div>
