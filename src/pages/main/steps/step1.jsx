@@ -27,7 +27,9 @@ const Step1 = ({goToStep}) => {
                 flexDirection: "column",
                 alignItems: "center",
                 marginTop: 10,
-                textAlign: "center"
+                textAlign: "center",
+                height: "100%",
+                justifyContent: "center"
             }}>
                 {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 5}}>
