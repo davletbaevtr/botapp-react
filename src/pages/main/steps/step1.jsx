@@ -49,18 +49,18 @@ const Step1 = ({goToStep}) => {
                 flexDirection: "column",
                 position: "relative",
                 paddingTop: 20,
-                justifyContent: "flex-end"
+                justifyContent: "flex-end",
             }}>
-                <img
-                    style={{
-                        marginLeft: 44,
-                        marginRight: 44,
-                        objectFit: 'contain',
-                        overflowClipMargin: 'content-box',
-                        overflow: "clip",
-                    }}
-                    src={phone} alt={'phone'}
-                />
+                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <img
+                        style={{
+                            objectFit: 'contain',
+                            overflowClipMargin: 'content-box',
+                            overflow: "clip",
+                        }}
+                        src={phone} alt={'phone'}
+                    />
+                </div>
 
                 <img
                     style={{position: "absolute", top: 160, left: 0}}
