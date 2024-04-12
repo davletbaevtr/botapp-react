@@ -49,7 +49,8 @@ const Step1 = ({goToStep}) => {
                 flexDirection: "column",
                 marginBottom: 24,
                 position: "relative",
-                paddingTop: 50
+                paddingTop: 50,
+                justifyContent: "flex-end"
             }}>
                 <img
                     style={{
