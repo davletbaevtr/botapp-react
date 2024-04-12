@@ -14,6 +14,6 @@ export const GRAY = '#959595'
 
 export const LIGHT_GRAY = '#EEEEEF'
 
-export const WHITE45 = '#ECEBEB'
+export const WHITE45 = 'rgba(255, 255, 255, 0.45)'
 
 export const WHITE = '#FFFFFF'

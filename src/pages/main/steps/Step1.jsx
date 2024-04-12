@@ -10,6 +10,7 @@ import MyButton from "../../../components/UI/MyButton";
 import {useTelegram} from "../../../hooks/useTelegram";
 import TgNickname from "../../../components/UI/TgNickname";
 import {BLUE} from "../../../utils/colors";
+import Ellipses from "../../../components/UI/Ellipses";
 
 const Step1 = ({goToStep}) => {
     const {user} = useTelegram();
@@ -97,18 +98,7 @@ const Step1 = ({goToStep}) => {
                     src={note}
                     alt={'note'}
                 />
-                <img
-                    width={"100%"}
-                    style={{position: 'absolute', top: 60, zIndex: 1}}
-                    src={topElliplse}
-                    alt={'top ellipse'}
-                />
-                <img
-                    width={"100%"}
-                    style={{position: 'absolute', top: 150, zIndex: 1}}
-                    src={bottomElliplse}
-                    alt={'bottom ellipse'}
-                />
+                <Ellipses/>
 
                 <MyButton
                     style={{marginTop: 10, zIndex: 2, marginBottom: 10}}

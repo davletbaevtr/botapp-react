@@ -9,6 +9,7 @@ import store from "../../../assets/main/step2/store.png";
 import topElliplse from "../../../assets/main/step1/top_ellipse.png";
 import bottomElliplse from "../../../assets/main/step1/bottom_ellipse.png";
 import MyButton from "../../../components/UI/MyButton";
+import Ellipses from "../../../components/UI/Ellipses";
 
 const Step2 = ({goToStep}) => {
     return (
@@ -106,18 +107,7 @@ const Step2 = ({goToStep}) => {
                     src={google}
                     alt={'google'}
                 />
-                <img
-                    width={"100%"}
-                    style={{position: 'absolute', top: 60, zIndex: 1}}
-                    src={topElliplse}
-                    alt={'top ellipse'}
-                />
-                <img
-                    width={"100%"}
-                    style={{position: 'absolute', top: 150, zIndex: 1}}
-                    src={bottomElliplse}
-                    alt={'bottom ellipse'}
-                />
+                <Ellipses/>
 
                 <MyButton
                     style={{zIndex: 2, marginBottom: 10}}
