@@ -29,7 +29,7 @@ const Step1 = ({goToStep}) => {
                 marginTop: 10,
                 textAlign: "center",
                 height: "100%",
-                justifyContent: "center"
+                // justifyContent: "center"
             }}>
                 {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 5}}>
