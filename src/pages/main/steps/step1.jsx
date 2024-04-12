@@ -29,7 +29,7 @@ const Step1 = ({goToStep}) => {
                 marginTop: 10,
                 textAlign: "center",
                 height: "100%",
-                // justifyContent: "center"
+                justifyContent: "center"
             }}>
                 {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 5}}>
@@ -55,6 +55,8 @@ const Step1 = ({goToStep}) => {
             }}>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <img
+                        height={239}
+                        width={'auto'}
                         style={{
                             objectFit: 'contain',
                             overflowClipMargin: 'content-box',
@@ -65,22 +67,30 @@ const Step1 = ({goToStep}) => {
                 </div>
 
                 <img
+                    width={118}
+                    height={'auto'}
                     style={{position: "absolute", top: 160, left: 0}}
                     src={card}
                     alt={'card'}
                 />
                 <img
+                    width={75}
+                    height={'auto'}
                     style={{position: "absolute", top: 25, left: 18}}
                     src={clock}
                     alt={'clock'}
                 />
                 <img
+                    width={107}
+                    height={'auto'}
                     style={{position: "absolute", top: 0, right: 15}}
                     src={wifi}
                     alt={'wifi'}
                 />
                 <img
-                    style={{position: "absolute", top: 70, right: 0}}
+                    width={80}
+                    height={'auto'}
+                    style={{position: "absolute", top: 75, right: 0}}
                     src={note}
                     alt={'note'}
                 />
