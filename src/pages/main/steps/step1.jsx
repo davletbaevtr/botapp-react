@@ -30,7 +30,7 @@ const Step1 = ({goToStep}) => {
                 textAlign: "center"
             }}>
                 {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
-                <div style={{fontSize: 28, fontWeight: 600, marginBottom: 14}}>
+                <div style={{fontSize: 28, fontWeight: 600, marginBottom: 5}}>
                     Добро пожаловать!
                 </div>
                 <div style={{fontSize: 16, fontWeight: 400}}>
@@ -47,9 +47,8 @@ const Step1 = ({goToStep}) => {
                 display: "flex",
                 width: "100%",
                 flexDirection: "column",
-                marginBottom: 24,
                 position: "relative",
-                paddingTop: 50,
+                paddingTop: 20,
                 justifyContent: "flex-end"
             }}>
                 <img
@@ -59,13 +58,12 @@ const Step1 = ({goToStep}) => {
                         objectFit: 'contain',
                         overflowClipMargin: 'content-box',
                         overflow: "clip",
-                        clipPath: "inset(10px)"
                     }}
                     src={phone} alt={'phone'}
                 />
 
                 <img
-                    style={{position: "absolute", top: 200, left: 0}}
+                    style={{position: "absolute", top: 160, left: 0}}
                     src={card}
                     alt={'card'}
                 />
@@ -85,7 +83,7 @@ const Step1 = ({goToStep}) => {
                     alt={'note'}
                 />
 
-                <MyButton style={{marginTop: 30}}>
+                <MyButton style={{marginTop: 10, zIndex: 2, marginBottom: 10}}>
                     Изучить WebApps
                 </MyButton>
             </div>

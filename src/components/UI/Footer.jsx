@@ -20,9 +20,9 @@ export default function Footer() {
                 }}
                 sx={{
                     backgroundColor: BACKGROUND_BLUE,
-                    height: 87,
+                    height: 60,
                     boxShadow: "none",
-                    borderTop: '1px solid rgba(255, 255, 255, 0.3)'
+                    borderTop: '1px solid rgba(255, 255, 255, 0.3)',
             }}
             >
                 {NavRoutes.map((route, index) => (
@@ -33,6 +33,7 @@ export default function Footer() {
                         to={route.path}
                         icon={<img src={route.icon} alt={route.path}/>}
                         sx={{
+                            padding: 0,
                             color: value === index ? "white" : "rgba(255, 255, 255, 0.5)",
                             '&.Mui-selected': {
                                 color: 'white',
