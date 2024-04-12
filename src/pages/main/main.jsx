@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Step1 from "./steps/step1";
 import {BACKGROUND_BLUE, LIGHT_GRAY} from "../../utils/colors";
+import Step2 from "./steps/Step2";
 
 const Main = () => {
     const [currentPage, setCurrentPage] = useState(1);

@@ -1,11 +1,11 @@
 import React from 'react';
-import phone from '../../../assets/main/step1_icons/phone.png'
-import card from '../../../assets/main/step1_icons/card.png'
-import note from '../../../assets/main/step1_icons/note.png'
-import clock from '../../../assets/main/step1_icons/clock.png'
-import wifi from '../../../assets/main/step1_icons/wifi.png'
-import topElliplse from '../../../assets/main/step1_icons/top_ellipse.png'
-import bottomElliplse from '../../../assets/main/step1_icons/bottom_ellipse.png'
+import phone from '../../../assets/main/step1/phone.png'
+import card from '../../../assets/main/step1/card.png'
+import note from '../../../assets/main/step1/note.png'
+import clock from '../../../assets/main/step1/clock.png'
+import wifi from '../../../assets/main/step1/wifi.png'
+import topElliplse from '../../../assets/main/step1/top_ellipse.png'
+import bottomElliplse from '../../../assets/main/step1/bottom_ellipse.png'
 import MyButton from "../../../components/UI/MyButton";
 import {useTelegram} from "../../../hooks/useTelegram";
 import TgNickname from "../../../components/UI/TgNickname";
@@ -39,7 +39,7 @@ const Step1 = ({goToStep}) => {
                 </div>
                 <div style={{fontSize: 16, fontWeight: 400}}>
                     <div>
-                        в <span style={{color: BLUE, fontWeight: 500}}>WebApps</span> - приложение
+                        в <span style={{color: BLUE, fontWeight: 500}}>WebApp</span> - приложение
                     </div>
                     <div>
                         внутри приложения
@@ -114,7 +114,7 @@ const Step1 = ({goToStep}) => {
                     style={{marginTop: 10, zIndex: 2, marginBottom: 10}}
                     onClick={() => goToStep(2)}
                 >
-                    Изучить WebApps
+                    Изучить WebApp
                 </MyButton>
             </div>
         </div>
