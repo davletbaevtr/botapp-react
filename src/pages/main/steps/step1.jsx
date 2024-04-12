@@ -21,7 +21,14 @@ const Step1 = ({goToStep}) => {
                 overflow: "auto",
             }}
         >
-            <div style={{display: "flex", width: "100%", flexDirection: "column", alignItems: "center", marginTop: 10, textAlign: "center"}}>
+            <div style={{
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                alignItems: "center",
+                marginTop: 10,
+                textAlign: "center"
+            }}>
                 {user?.username ? <TgNickname nickname={user.username}/> : <TgNickname nickname={'Norbee'}/>}
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 14}}>
                     Добро пожаловать!
@@ -36,9 +43,22 @@ const Step1 = ({goToStep}) => {
                 </div>
             </div>
 
-            <div style={{display: "flex", width: "100%", flexDirection: "column", marginBottom: 24, position: "relative", paddingTop: 50}}>
+            <div style={{
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                marginBottom: 24,
+                position: "relative",
+                paddingTop: 50
+            }}>
                 <img
-                    style={{marginLeft: 44, marginRight: 44, objectFit: 'contain',}}
+                    style={{
+                        marginLeft: 44,
+                        marginRight: 44,
+                        objectFit: 'contain',
+                        overflowClipMargin: 'content-box',
+                        overflow: "clip"
+                    }}
                     src={phone} alt={'phone'}
                 />
 
