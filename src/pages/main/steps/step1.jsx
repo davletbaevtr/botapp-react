@@ -48,7 +48,7 @@ const Step1 = ({goToStep}) => {
                 width: "100%",
                 flexDirection: "column",
                 position: "relative",
-                paddingTop: 20,
+                paddingTop: 10,
                 justifyContent: "flex-end",
             }}>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>

@@ -20,7 +20,7 @@ export default function Footer() {
                 }}
                 sx={{
                     backgroundColor: BACKGROUND_BLUE,
-                    height: 60,
+                    height: 87,
                     boxShadow: "none",
                     borderTop: '1px solid rgba(255, 255, 255, 0.3)',
             }}
