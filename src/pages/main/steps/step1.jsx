@@ -58,7 +58,8 @@ const Step1 = ({goToStep}) => {
                         marginRight: 44,
                         objectFit: 'contain',
                         overflowClipMargin: 'content-box',
-                        overflow: "clip"
+                        overflow: "clip",
+                        clipPath: "inset(10px)"
                     }}
                     src={phone} alt={'phone'}
                 />
