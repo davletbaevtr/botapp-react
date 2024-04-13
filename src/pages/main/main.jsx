@@ -14,10 +14,18 @@ import {CircularProgress} from "@mui/material";
 const Main = () => {
     const [isLoading, setIsLoading] = useState(true);
     const preloadImages = (srcArray) => {
+        let loadedImages = 0;
+        const totalImages = srcArray.length;
         srcArray.forEach((src) => {
             const img = new Image();
             img.src = src;
-        }).then(() => setIsLoading(false));
+            img.onload = () => {
+                loadedImages++;
+                if (loadedImages === totalImages) {
+                    setIsLoading(false);
+                }
+            };
+        });
     };
 
     useEffect(() => {

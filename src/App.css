@@ -11,3 +11,13 @@ img {
   pointer-events: none;
 }
 
+.slick-dots li button:before {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+
+
