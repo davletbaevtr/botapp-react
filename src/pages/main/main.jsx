@@ -26,6 +26,7 @@ const Main = () => {
     };
 
     useEffect(() => {
+        console.log('sfadsfdasfdsaf')
         if (history.length > 1) {
             tg.BackButton.show();
             tg.BackButton.onClick(goBack);
