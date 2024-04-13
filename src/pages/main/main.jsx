@@ -13,23 +13,20 @@ import {useTelegram} from "../../hooks/useTelegram";
 const Main = () => {
     const {tg} = useTelegram();
     const [currentPage, setCurrentPage] = useState(1);
-    const [prevPage, setPrevPage] = useState(0);
-    const [history, setHistory] = useState([])
+    const [history, setHistory] = useState([1])
 
     const goBack = () => {
-        setCurrentPage(currentPage.slice(0, -1));
+        setHistory(history.slice(0, history.length - 1));
+        setCurrentPage(history[history.length - 1]);
     }
 
     const goToStep = (page) => {
-        if (prevPage !== 0) {
-            setHistory([...history, prevPage]);
-        }
-        setPrevPage(currentPage);
+        setHistory([...history, page]);
         setCurrentPage(page);
     };
 
     useEffect(() => {
-        if (history.length > 0) {
+        if (history.length > 1) {
             tg.BackButton.show();
             tg.BackButton.onClick(goBack);
         } else {
