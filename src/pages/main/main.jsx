@@ -15,6 +15,10 @@ const Main = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [history, setHistory] = useState([1])
 
+    useEffect(() => {
+        console.log(history)
+    }, [history]);
+
     const goBack = () => {
         setHistory(history.slice(0, history.length - 1));
         setCurrentPage(history[history.length - 1]);
