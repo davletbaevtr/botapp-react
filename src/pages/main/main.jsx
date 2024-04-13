@@ -16,33 +16,37 @@ const Main = () => {
     const [history, setHistory] = useState([1])
     const [needShow, setNeedShow] = useState(true);
 
-    const goBack = () => {
-        const newHistory = history.slice(0, -1);
-        setHistory(newHistory);
-        setCurrentPage(newHistory[newHistory.length - 1]);
-    };
-
-
     const goToStep = (page) => {
         setHistory([...history, page]);
         setCurrentPage(page);
     };
 
     useEffect(() => {
+        const goBack = () => {
+            const newHistory = history.slice(0, -1);
+            setHistory(newHistory);
+            setCurrentPage(newHistory[newHistory.length - 1]);
+        };
+
         if (history.length > 1) {
-            console.log('>lenght 1')
+            console.log('>length 1');
             if (needShow) {
-                console.log('show')
+                console.log('show');
                 tg.BackButton.show();
                 tg.BackButton.onClick(goBack);
                 setNeedShow(false);
             }
-        } else if (history.length === 1) {
-            console.log('hide')
+        } else {
+            console.log('hide');
             tg.BackButton.hide();
             setNeedShow(true);
         }
-    }, [history, goBack]);
+
+        // Возвращаем функцию для очистки
+        return () => {
+            tg.BackButton.offClick(goBack);
+        };
+    }, [history, needShow, tg]);
 
     const renderCurrentPage = () => {
         switch (currentPage) {
