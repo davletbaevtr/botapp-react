@@ -29,7 +29,6 @@ const Main = () => {
         };
 
         if (history.length > 1) {
-            console.log('>length 1');
             if (needShow) {
                 console.log('show');
                 tg.BackButton.show();
@@ -41,11 +40,6 @@ const Main = () => {
             tg.BackButton.hide();
             setNeedShow(true);
         }
-
-        // Возвращаем функцию для очистки
-        return () => {
-            tg.BackButton.offClick(goBack);
-        };
     }, [history, needShow, tg]);
 
     const renderCurrentPage = () => {
