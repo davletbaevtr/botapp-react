@@ -9,6 +9,7 @@ function App() {
     const {tg} = useTelegram();
     tg.setHeaderColor(LIGHT_GRAY);
     tg.setBackgroundColor(BACKGROUND_BLUE);
+    tg.expand();
 
     return (
         <BrowserRouter>
