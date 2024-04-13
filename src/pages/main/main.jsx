@@ -44,7 +44,7 @@ const Main = () => {
             tg.BackButton.offClick(goBack);
             tg.BackButton.hide();
         };
-    }, []);
+    }, [history]);
 
     const renderCurrentPage = () => {
         switch (currentPage) {
