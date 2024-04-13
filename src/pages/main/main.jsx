@@ -14,10 +14,7 @@ const Main = () => {
     const {tg} = useTelegram();
     const [currentPage, setCurrentPage] = useState(1);
     const [history, setHistory] = useState([1])
-
-    useEffect(() => {
-        console.log(history)
-    }, [history]);
+    const [needShow, setNeedShow] = useState(true);
 
     const goBack = () => {
         const newHistory = history.slice(0, -1);
@@ -32,19 +29,22 @@ const Main = () => {
     };
 
     useEffect(() => {
-        console.log('sfadsfdasfdsaf')
         if (history.length > 1) {
-            tg.BackButton.show();
-            tg.BackButton.onClick(goBack);
-        } else {
+            if (needShow) {
+                tg.BackButton.show();
+                tg.BackButton.onClick(goBack);
+                setNeedShow(false);
+            }
+        } else if (history.length === 1) {
             tg.BackButton.hide();
+            setNeedShow(true);
         }
 
         return () => {
             tg.BackButton.offClick(goBack);
             tg.BackButton.hide();
         };
-    }, [tg, history]);
+    }, []);
 
     const renderCurrentPage = () => {
         switch (currentPage) {
