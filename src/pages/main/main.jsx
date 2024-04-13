@@ -29,17 +29,15 @@ const Main = () => {
         };
 
         if (history.length > 1) {
-            if (needShow) {
-                console.log('show');
-                tg.BackButton.show();
-                tg.BackButton.onClick(goBack);
-                setNeedShow(false);
-            }
-        } else {
-            console.log('hide');
-            tg.BackButton.hide();
-            setNeedShow(true);
+            tg.BackButton.onClick(goBack);
+            tg.BackButton.show();
         }
+
+        // Возвращаем функцию для очистки
+        return () => {
+            tg.BackButton.hide();
+            tg.BackButton.offClick(goBack);
+        };
     }, [history, needShow, tg]);
 
     const renderCurrentPage = () => {
