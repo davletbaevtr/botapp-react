@@ -34,7 +34,7 @@ const Main = () => {
             tg.BackButton.offClick(goBack);
             tg.BackButton.hide();
         }
-    }, []);
+    }, [history]);
 
     useEffect(() => {
         return () => {
