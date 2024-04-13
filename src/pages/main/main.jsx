@@ -30,8 +30,11 @@ const Main = () => {
         if (history.length > 1) {
             tg.BackButton.onClick(goBack);
             tg.BackButton.show();
+        } else {
+            tg.BackButton.offClick(goBack);
+            tg.BackButton.hide();
         }
-    }, [history, tg]);
+    }, []);
 
     useEffect(() => {
         return () => {
