@@ -29,14 +29,15 @@ const Main = () => {
         };
 
         if (history.length > 1) {
-            tg.BackButton.onClick(goBack);
-            tg.BackButton.show();
+            setTimeout(() => {
+                tg.BackButton.onClick(goBack);
+                tg.BackButton.show();
+            }, 1000);
         }
 
-        // Возвращаем функцию для очистки
         return () => {
-            tg.BackButton.hide();
             tg.BackButton.offClick(goBack);
+            tg.BackButton.hide();
         };
     }, [history, needShow, tg]);
 
