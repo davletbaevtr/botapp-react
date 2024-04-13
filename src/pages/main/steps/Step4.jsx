@@ -6,8 +6,6 @@ import {DEEP_BLUE, WHITE45} from "../../../utils/colors";
 import car from '../../../assets/main/step4/car.png'
 import hand from '../../../assets/main/step4/hand.png'
 import MarkText from "../../../components/UI/MarkText";
-import topElliplse from "../../../assets/main/step1/top_ellipse.png";
-import bottomElliplse from "../../../assets/main/step1/bottom_ellipse.png";
 import Ellipses from "../../../components/UI/Ellipses";
 
 const Step4 = ({goToStep}) => {

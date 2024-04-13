@@ -6,8 +6,6 @@ import phone from "../../../assets/main/step2/phone.png";
 import chat from "../../../assets/main/step2/chat.png";
 import paper from "../../../assets/main/step2/paper.png";
 import store from "../../../assets/main/step2/store.png";
-import topElliplse from "../../../assets/main/step1/top_ellipse.png";
-import bottomElliplse from "../../../assets/main/step1/bottom_ellipse.png";
 import MyButton from "../../../components/UI/MyButton";
 import Ellipses from "../../../components/UI/Ellipses";
 

@@ -8,7 +8,6 @@ import tg from '../../../assets/main/step7/tg.svg'
 import phone from '../../../assets/main/step7/phone.svg'
 import wa from '../../../assets/main/step7/wa.svg'
 import Ellipses from "../../../components/UI/Ellipses";
-import {WHITE45} from "../../../utils/colors";
 import ContactButton from "../../../components/UI/ContactButton";
 
 const Step7 = () => {

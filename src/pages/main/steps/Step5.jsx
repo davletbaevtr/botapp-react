@@ -9,7 +9,7 @@ import mount from '../../../assets/main/step5/mount.svg'
 import wb from '../../../assets/main/step5/wb.svg'
 import coinmarketcap from '../../../assets/main/step5/coinmarketcap.svg'
 import MyButton from "../../../components/UI/MyButton";
-import {WHITE, WHITE45} from "../../../utils/colors";
+import {WHITE} from "../../../utils/colors";
 import PartnerCard from "../../../components/UI/PartnerCard";
 
 const Step5 = ({goToStep}) => {
