@@ -11,69 +11,49 @@ import Step8 from "./steps/Step8";
 import {useTelegram} from "../../hooks/useTelegram";
 import {CircularProgress} from "@mui/material";
 
+import step8Hand from '../../assets/main/step8/hand.png';
+import step7Wa from '../../assets/main/step7/wa.svg';
+import step7Twomoney from '../../assets/main/step7/twomoney.png';
+import step7Trofey from '../../assets/main/step7/trofey.png';
+import step7Tg from '../../assets/main/step7/tg.svg';
+import step7Phone from '../../assets/main/step7/phone.svg';
+import step7Onemoney from '../../assets/main/step7/onemoney.png';
+import step7Money from '../../assets/main/step7/money.png';
+import step6Phone from '../../assets/main/step6/phone.png';
+import step6Folder from '../../assets/main/step6/folder.png';
+import step6Clock from '../../assets/main/step6/clock.png';
+import step6Bell from '../../assets/main/step6/bell.png';
+import step5Wb from '../../assets/main/step5/wb.svg';
+import step5Coinmarketcap from '../../assets/main/step5/coinmarketcap.svg';
+import step5Mount from '../../assets/main/step5/mount.svg';
+import step5Gosuslugi from '../../assets/main/step5/gosuslugi.svg';
+import step5Bitrix from '../../assets/main/step5/bitrix.svg';
+import step5Onec from '../../assets/main/step5/onec.svg';
+import step5Ozon from '../../assets/main/step5/ozon.svg';
+import step5Crm from '../../assets/main/step5/crm.svg';
+import step4Mark from '../../assets/main/step4/mark.svg';
+import step4Hand from '../../assets/main/step4/hand.png';
+import step4Car from '../../assets/main/step4/car.png';
+import step3Youtube from '../../assets/main/step3/youtube.png';
+import step3Mark from '../../assets/main/step3/mark.png';
+import step3Clock from '../../assets/main/step3/clock.png';
+import step3Folder from '../../assets/main/step3/folder.png';
+import step2Store from '../../assets/main/step2/store.png';
+import step2Phone from '../../assets/main/step2/phone.png';
+import step2Microsoft from '../../assets/main/step2/microsoft.png';
+import step2Google from '../../assets/main/step2/google.png';
+import step2Paper from '../../assets/main/step2/paper.png';
+import step2Chat from '../../assets/main/step2/chat.png';
+import step1Wifi from '../../assets/main/step1/wifi.png';
+import step1Clock from '../../assets/main/step1/clock.png';
+import step1Card from '../../assets/main/step1/card.png';
+import step1Note from '../../assets/main/step1/note.png';
+import step1Phone from '../../assets/main/step1/phone.png';
+import step1BottomEllipse from '../../assets/main/step1/bottom_ellipse.png';
+import step1TopEllipse from '../../assets/main/step1/top_ellipse.png';
+
+
 const Main = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    const preloadImages = (srcArray) => {
-        let loadedImages = 0;
-        const totalImages = srcArray.length;
-        srcArray.forEach((src, index) => {
-            const img = new Image();
-            img.src = src;
-            loadedImages++;
-            if (loadedImages === totalImages) {
-                setIsLoading(false);
-            }
-        });
-    };
-
-    useEffect(() => {
-        const images = [
-            '../../assets/main/step8/hand.png',
-            '../../assets/main/step7/wa.svg',
-            '../../assets/main/step7/twomoney.png',
-            '../../assets/main/step7/trofey.png',
-            '../../assets/main/step7/tg.svg',
-            '../../assets/main/step7/phone.svg',
-            '../../assets/main/step7/onemoney.png',
-            '../../assets/main/step7/money.png',
-            '../../assets/main/step6/phone.png',
-            '../../assets/main/step6/folder.png',
-            '../../assets/main/step6/clock.png',
-            '../../assets/main/step6/bell.png',
-            '../../assets/main/step5/wb.svg',
-            '../../assets/main/step5/coinmarketcap.svg',
-            '../../assets/main/step5/mount.svg',
-            '../../assets/main/step5/gosuslugi.svg',
-            '../../assets/main/step5/bitrix.svg',
-            '../../assets/main/step5/onec.svg',
-            '../../assets/main/step5/ozon.svg',
-            '../../assets/main/step5/crm.svg',
-            '../../assets/main/step4/mark.svg',
-            '../../assets/main/step4/hand.png',
-            '../../assets/main/step4/car.png',
-            '../../assets/main/step3/youtube.png',
-            '../../assets/main/step3/mark.png',
-            '../../assets/main/step3/clock.png',
-            '../../assets/main/step3/folder.png',
-            '../../assets/main/step2/store.png',
-            '../../assets/main/step2/phone.png',
-            '../../assets/main/step2/microsoft.png',
-            '../../assets/main/step2/google.png',
-            '../../assets/main/step2/paper.png',
-            '../../assets/main/step2/chat.png',
-            '../../assets/main/step1/wifi.png',
-            '../../assets/main/step1/clock.png',
-            '../../assets/main/step1/card.png',
-            '../../assets/main/step1/note.png',
-            '../../assets/main/step1/phone.png',
-            '../../assets/main/step1/bottom_ellipse.png',
-            '../../assets/main/step1/top_ellipse.png'
-        ];
-
-        preloadImages(images);
-    }, []);
-
-
     const {tg} = useTelegram();
     const [currentPage, setCurrentPage] = useState(1);
     const [history, setHistory] = useState([1]);
@@ -134,12 +114,7 @@ const Main = () => {
             minHeight: "100vh",
         }}>
             <div style={{maxHeight: "calc(100svh - 87px)", height: "calc(100svh - 87px)"}}>
-                {isLoading ?
-                    <div style={{height: "100%", width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                        <CircularProgress/>
-                    </div> :
-                    renderCurrentPage()
-                }
+                {renderCurrentPage()}
             </div>
         </div>
     );

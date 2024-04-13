@@ -4,8 +4,6 @@ import card from '../../../assets/main/step1/card.png'
 import note from '../../../assets/main/step1/note.png'
 import clock from '../../../assets/main/step1/clock.png'
 import wifi from '../../../assets/main/step1/wifi.png'
-import topElliplse from '../../../assets/main/step1/top_ellipse.png'
-import bottomElliplse from '../../../assets/main/step1/bottom_ellipse.png'
 import MyButton from "../../../components/UI/MyButton";
 import {useTelegram} from "../../../hooks/useTelegram";
 import TgNickname from "../../../components/UI/TgNickname";
