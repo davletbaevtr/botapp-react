@@ -17,7 +17,7 @@ const Main = () => {
     const [history, setHistory] = useState([])
 
     const goBack = () => {
-        setCurrentPage(history.pop());
+        setCurrentPage(currentPage.slice(0, -1));
     }
 
     const goToStep = (page) => {
