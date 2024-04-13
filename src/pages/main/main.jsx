@@ -14,21 +14,30 @@ const Main = () => {
     const {tg} = useTelegram();
     const [currentPage, setCurrentPage] = useState(1);
     const [prevPage, setPrevPage] = useState(0);
+    const history = [];
+
+    const goBack = () => {
+        setCurrentPage(history.pop());
+    }
 
     const goToStep = (page) => {
+        if (prevPage !== 0) {
+            history.push(prevPage);
+        }
         setPrevPage(currentPage);
         setCurrentPage(page);
     };
 
     useEffect(() => {
         console.log('вызвалось')
-        const goBack = () => {
-            setCurrentPage(prevPage);
-        }
         
-        if (tg && tg.BackButton && prevPage !== 0) {
-            tg.BackButton.show();
-            tg.BackButton.onClick(goBack);
+        if (tg && tg.BackButton) {
+            if (history.length !== 0) {
+                tg.BackButton.show();
+                tg.BackButton.onClick(goBack);
+            } else {
+                tg.BackButton.hide();
+            }
         }
 
         return () => {
