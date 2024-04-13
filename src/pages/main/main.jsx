@@ -20,8 +20,8 @@ const Main = () => {
     }, [history]);
 
     const goBack = () => {
-        setHistory(history.slice(0, history.length - 1));
-        setCurrentPage(history[history.length - 1]);
+        setHistory(history.slice(0, -1));
+        setCurrentPage(history[-1]);
     }
 
     const goToStep = (page) => {
