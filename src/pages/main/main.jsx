@@ -23,7 +23,7 @@ const Main = () => {
     useEffect(() => {
         console.log('вызвалось')
         const goBack = () => {
-            goToStep(prevPage)
+            setCurrentPage(prevPage);
         }
         
         if (tg && tg.BackButton && prevPage !== 0) {
