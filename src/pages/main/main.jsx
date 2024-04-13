@@ -16,15 +16,13 @@ const Main = () => {
     const preloadImages = (srcArray) => {
         let loadedImages = 0;
         const totalImages = srcArray.length;
-        srcArray.forEach((src) => {
+        srcArray.forEach((src, index) => {
             const img = new Image();
             img.src = src;
-            img.onload = () => {
-                loadedImages++;
-                if (loadedImages === totalImages) {
-                    setIsLoading(false);
-                }
-            };
+            loadedImages++;
+            if (loadedImages === totalImages) {
+                setIsLoading(false);
+            }
         });
     };
 
