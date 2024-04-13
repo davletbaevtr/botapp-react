@@ -32,7 +32,7 @@ const Main = () => {
             setTimeout(() => {
                 tg.BackButton.onClick(goBack);
                 tg.BackButton.show();
-            }, 1000);
+            }, 100);
         }
 
         return () => {
