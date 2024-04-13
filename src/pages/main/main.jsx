@@ -42,7 +42,7 @@ const Main = () => {
             tg.BackButton.hide();
             setNeedShow(true);
         }
-    }, [history]);
+    }, [history, goBack]);
 
     const renderCurrentPage = () => {
         switch (currentPage) {
