@@ -20,10 +20,11 @@ const Main = () => {
     }, [history]);
 
     const goBack = () => {
-        setHistory(history.slice(0, -1));
-        console.log(history[history.length - 1]);
-        setCurrentPage(history[history.length - 1]);
-    }
+        const newHistory = history.slice(0, -1);
+        setHistory(newHistory);
+        setCurrentPage(newHistory[newHistory.length - 1]);
+    };
+
 
     const goToStep = (page) => {
         setHistory([...history, page]);
