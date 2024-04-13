@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Step1 from "./steps/Step1";
 import {BACKGROUND_BLUE, LIGHT_GRAY} from "../../utils/colors";
 import Step2 from "./steps/Step2";
@@ -8,13 +8,37 @@ import Step5 from "./steps/Step5";
 import Step6 from "./steps/Step6";
 import Step7 from "./steps/Step7";
 import Step8 from "./steps/Step8";
+import {useTelegram} from "../../hooks/useTelegram";
 
 const Main = () => {
+    const {tg} = useTelegram();
     const [currentPage, setCurrentPage] = useState(1);
+    const [prevPage, setPrevPage] = useState(0);
 
     const goToStep = (page) => {
+        setPrevPage(currentPage);
         setCurrentPage(page);
     };
+
+    useEffect(() => {
+        console.log('вызвалось')
+        const goBack = () => {
+            goToStep(prevPage)
+        }
+        
+        if (tg && tg.BackButton && prevPage !== 0) {
+            tg.BackButton.show();
+            tg.BackButton.onClick(goBack);
+        }
+
+        return () => {
+            if (tg && tg.BackButton) {
+                tg.BackButton.offClick(goBack);
+                tg.BackButton.hide();
+
+            }
+        };
+    }, [prevPage, tg]);
 
     const renderCurrentPage = () => {
         switch (currentPage) {
