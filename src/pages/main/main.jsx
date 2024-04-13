@@ -30,17 +30,21 @@ const Main = () => {
 
     useEffect(() => {
         if (history.length > 1) {
+            console.log('>lenght 1')
             if (needShow) {
+                console.log('show')
                 tg.BackButton.show();
                 tg.BackButton.onClick(goBack);
                 setNeedShow(false);
             }
         } else if (history.length === 1) {
+            console.log('hide')
             tg.BackButton.hide();
             setNeedShow(true);
         }
 
         return () => {
+            console.log('ofclick')
             tg.BackButton.offClick(goBack);
             tg.BackButton.hide();
         };
