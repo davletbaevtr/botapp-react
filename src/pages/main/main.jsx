@@ -21,7 +21,8 @@ const Main = () => {
 
     const goBack = () => {
         setHistory(history.slice(0, -1));
-        setCurrentPage(history[-1]);
+        console.log(history[history.length - 1]);
+        setCurrentPage(history[history.length - 1]);
     }
 
     const goToStep = (page) => {
