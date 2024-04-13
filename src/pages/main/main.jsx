@@ -42,12 +42,6 @@ const Main = () => {
             tg.BackButton.hide();
             setNeedShow(true);
         }
-
-        return () => {
-            console.log('ofclick')
-            tg.BackButton.offClick(goBack);
-            tg.BackButton.hide();
-        };
     }, [history]);
 
     const renderCurrentPage = () => {
