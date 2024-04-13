@@ -10,6 +10,7 @@ import wb from '../../../assets/main/step5/wb.svg'
 import coinmarketcap from '../../../assets/main/step5/coinmarketcap.svg'
 import MyButton from "../../../components/UI/MyButton";
 import {WHITE, WHITE45} from "../../../utils/colors";
+import PartnerCard from "../../../components/UI/PartnerCard";
 
 const Step5 = ({goToStep}) => {
     return (
@@ -62,128 +63,16 @@ const Step5 = ({goToStep}) => {
                         overflow: "hidden",
                         marginBottom: 10
                     }}>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginRight: 10
-                            }}
-                        >
-                            <img src={crm} alt={'crm'}/>
-                        </div>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginRight: 10
-                            }}
-                        >
-                            <img src={gosuslugi} alt={'gosuslugi'}/>
-                        </div>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginRight: 10
-                            }}
-                        >
-                            <img src={onec} alt={'onec'}/>
-                        </div>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginRight: 10
-                            }}
-                        >
-                            <img src={mount} alt={'mount'}/>
-                        </div>
+                        <PartnerCard img={crm} margin={'0 10px 0 0'}/>
+                        <PartnerCard img={gosuslugi} margin={'0 10px 0 0'}/>
+                        <PartnerCard img={onec} margin={'0 10px 0 0'}/>
+                        <PartnerCard img={mount} margin={'0 10px 0 0'}/>
                     </div>
                     <div style={{display: "flex", justifyContent: "right", overflow: "hidden"}}>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginLeft: 10
-                            }}
-                        >
-                            <img src={wb} alt={'wb'}/>
-                        </div>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginLeft: 10
-                            }}
-                        >
-                            <img src={bitrix} alt={'bitrix'}/>
-                        </div>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginLeft: 10
-                            }}
-                        >
-                            <img src={coinmarketcap} alt={'coinmarketcap'}/>
-                        </div>
-                        <div
-                            style={{
-                                backgroundColor: WHITE45,
-                                borderRadius: 25,
-                                width: '26vw',
-                                minWidth: '26vw',
-                                height: '26vw',
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginLeft: 10
-                            }}
-                        >
-                            <img src={ozon} alt={'ozon'}/>
-                        </div>
+                        <PartnerCard img={wb} margin={'0 0 0 10px'}/>
+                        <PartnerCard img={bitrix} margin={'0 0 0 10px'}/>
+                        <PartnerCard img={coinmarketcap} margin={'0 0 0 10px'}/>
+                        <PartnerCard img={ozon} margin={'0 0 0 10px'}/>
                     </div>
                 </div>
                 <div style={{display: "flex", flexDirection: "column"}}>

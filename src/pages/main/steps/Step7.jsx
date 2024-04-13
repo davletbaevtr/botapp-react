@@ -9,6 +9,7 @@ import phone from '../../../assets/main/step7/phone.svg'
 import wa from '../../../assets/main/step7/wa.svg'
 import Ellipses from "../../../components/UI/Ellipses";
 import {WHITE45} from "../../../utils/colors";
+import ContactButton from "../../../components/UI/ContactButton";
 
 const Step7 = () => {
     return (
@@ -32,58 +33,17 @@ const Step7 = () => {
                 justifyContent: "center"
             }}>
                 <div style={{fontSize: 28, fontWeight: 600, marginBottom: 5}}>
-                    Возможности
+                    Уррааа! Скоро у вас будет приложение!
                 </div>
                 <div style={{fontSize: 16, fontWeight: 400}}>
                     <div>
-                        все, что делают все приложения, за счет
-                    </div>
-
-                    <div>
-                        интеграции готовы <BlueText>заменить</BlueText> практически
-                    </div>
-
-                    <div>
-                        любое <BlueText>приложение</BlueText> или <BlueText>сайт</BlueText>
+                        Выберите удобный способ <BlueText>для связи:</BlueText>
                     </div>
                 </div>
                 <div style={{display: "flex", justifyContent: "center", marginTop: 15}}>
-                    <div style={{
-                        backgroundColor: WHITE45,
-                        borderRadius: 14,
-                        width: 56,
-                        height: 56,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        margin: '0 10px 0 10px'
-                    }}>
-                        <img src={tg} alt={'tg'}/>
-                    </div>
-                    <div style={{
-                        backgroundColor: WHITE45,
-                        borderRadius: 14,
-                        width: 56,
-                        height: 56,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        margin: '0 10px 0 10px'
-                    }}>
-                        <img src={wa} alt={'wa'}/>
-                    </div>
-                    <div style={{
-                        backgroundColor: WHITE45,
-                        borderRadius: 14,
-                        width: 56,
-                        height: 56,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        margin: '0 10px 0 10px'
-                    }}>
-                        <img src={phone} alt={'phone'}/>
-                    </div>
+                    <ContactButton img={tg}/>
+                    <ContactButton img={wa}/>
+                    <ContactButton img={phone}/>
                 </div>
             </div>
 

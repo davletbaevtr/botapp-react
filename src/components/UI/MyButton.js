@@ -15,6 +15,7 @@ const MyButton = styled.button`
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
+    z-index: 100;
 `;
 
 export default MyButton;

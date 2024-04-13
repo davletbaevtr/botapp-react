@@ -7,6 +7,7 @@ import Step4 from "./steps/Step4";
 import Step5 from "./steps/Step5";
 import Step6 from "./steps/Step6";
 import Step7 from "./steps/Step7";
+import Step8 from "./steps/Step8";
 
 const Main = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -31,8 +32,8 @@ const Main = () => {
                 return <Step6 goToStep={goToStep}/>;
             case 7:
                 return <Step7 goToStep={goToStep}/>;
-            // case 8:
-            //     return <Step8 goToStep={goToStep}/>;
+            case 8:
+                return <Step8 goToStep={goToStep}/>;
             default:
                 return <div>Page not found</div>;
         }
