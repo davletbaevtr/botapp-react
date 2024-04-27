@@ -101,7 +101,7 @@ const Step6 = ({goToStep}) => {
                         Хочу разработку
                     </MyButton>
                     <MyButton
-                        style={{zIndex: 2, backgroundColor: 'rgba(255, 255, 255, 0)', color: WHITE}}
+                        style={{zIndex: 2, backgroundColor: 'rgba(255, 255, 255, 0)', color: WHITE, marginBottom: 30}}
                         onClick={() => goToStep(8)}
                     >
                         Нужна ваша помощь

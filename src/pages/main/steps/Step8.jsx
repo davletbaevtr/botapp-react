@@ -80,7 +80,7 @@ const Step8 = ({goToStep}) => {
                 <div style={{fontSize: 16, fontWeight: 600, textAlign: "center", color: "white", marginBottom: 5}}>
                     Есть вопросы? Свяжитесь с нами:
                 </div>
-                <div style={{display: "flex", justifyContent: "center", marginBottom: 10}}>
+                <div style={{display: "flex", justifyContent: "center", marginBottom: 40}}>
                     <ContactButton img={tg}/>
                     <ContactButton img={wa}/>
                     <ContactButton img={phone}/>

@@ -99,7 +99,7 @@ const Step1 = ({goToStep}) => {
                 <Ellipses/>
 
                 <MyButton
-                    style={{marginTop: 10, zIndex: 2, marginBottom: 10}}
+                    style={{marginTop: 30, zIndex: 2, marginBottom: 40}}
                     onClick={() => goToStep(2)}
                 >
                     Изучить WebApp

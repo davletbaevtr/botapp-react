@@ -93,7 +93,7 @@ const Step3 = ({goToStep}) => {
                 <Ellipses/>
 
                 <MyButton
-                    style={{zIndex: 2, marginBottom: 10}}
+                    style={{zIndex: 2, marginBottom: 40}}
                     onClick={() => goToStep(4)}
                 >
                     Подойдет мне WebApp?

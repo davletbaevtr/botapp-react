@@ -7,13 +7,13 @@ const Ellipses = () => {
         <>
             <img
                 width={"100%"}
-                style={{position: 'absolute', bottom: 215, zIndex: 0}}
+                style={{position: 'absolute', bottom: 265, zIndex: 0}}
                 src={topElliplse}
                 alt={'top ellipse'}
             />
             <img
                 width={"100%"}
-                style={{position: 'absolute', bottom: 60, zIndex: 0}}
+                style={{position: 'absolute', bottom: 110, zIndex: 0}}
                 src={bottomElliplse}
                 alt={'bottom ellipse'}
             />

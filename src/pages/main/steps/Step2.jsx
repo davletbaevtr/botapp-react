@@ -58,7 +58,7 @@ const Step2 = ({goToStep}) => {
             }}>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <img
-                        height={250}
+                        height={280}
                         width={'auto'}
                         style={{
                             objectFit: 'contain',
@@ -108,7 +108,7 @@ const Step2 = ({goToStep}) => {
                 <Ellipses/>
 
                 <MyButton
-                    style={{zIndex: 2, marginBottom: 10}}
+                    style={{zIndex: 2, marginBottom: 40}}
                     onClick={() => goToStep(3)}
                 >
                     Что может WebApp

@@ -152,7 +152,7 @@ const Step4 = ({goToStep}) => {
                 <Ellipses/>
 
                 <MyButton
-                    style={{zIndex: 2, marginBottom: 10, marginTop: 35}}
+                    style={{zIndex: 2, marginBottom: 40, marginTop: 35}}
                     onClick={() => goToStep(5)}
                 >
                     Вау! а что еще?

@@ -56,7 +56,7 @@ const Step7 = () => {
             }}>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <img
-                        height={310}
+                        height={330}
                         width={'auto'}
                         style={{
                             objectFit: 'contain',
