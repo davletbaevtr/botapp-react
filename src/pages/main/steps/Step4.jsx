@@ -147,6 +147,62 @@ const Step4 = ({goToStep}) => {
                             />
                         </div>
                     </div>
+                    <div>
+                        <div
+                            style={{
+                                width: "calc(100vw - 30px)",
+                                display: "flex",
+                                flexDirection: "column",
+                                minHeight: sliderHeight,
+                                padding: '15px 0 0 20px',
+                                borderRadius: 10,
+                                backgroundColor: WHITE45,
+                                position: "relative",
+                            }}
+                        >
+                            <div style={{fontSize: 20, marginBottom: 5}}>
+                                <span style={{fontWeight: 600, color: DEEP_BLUE}}>Недвижимость</span>
+                            </div>
+                            <MarkText text={'Запись клиентов'}/>
+                            <MarkText text={'Онлайн - консультации'}/>
+                            <MarkText text={'Оплата услуги'}/>
+                            <img
+                                width={120}
+                                height={'auto'}
+                                src={car}
+                                alt={'car'}
+                                style={{position: "absolute", right: 15, top: top}}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            style={{
+                                width: "calc(100vw - 30px)",
+                                display: "flex",
+                                flexDirection: "column",
+                                minHeight: sliderHeight,
+                                padding: '15px 0 0 20px',
+                                borderRadius: 10,
+                                backgroundColor: WHITE45,
+                                position: "relative",
+                            }}
+                        >
+                            <div style={{fontSize: 20, marginBottom: 5}}>
+                                <span style={{fontWeight: 600, color: DEEP_BLUE}}>Бьюти - салоны</span>
+                            </div>
+                            <MarkText text={'Запись клиентов'}/>
+                            <MarkText text={'Онлайн - консультации'}/>
+                            <MarkText text={'Оплата услуги'}/>
+                            <img
+                                width={120}
+                                height={'auto'}
+                                src={car}
+                                alt={'car'}
+                                style={{position: "absolute", right: 15, top: top}}
+                            />
+                        </div>
+                    </div>
                 </Slider>
 
                 <Ellipses/>
