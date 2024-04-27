@@ -1,6 +1,4 @@
-import {ASSISTANT_ROUTE, ABOUT_APP_ROUTE, MAIN_ROUTE} from "../utils/consts";
-import assistant from "../pages/assistant/assistant";
-import about_app from "../pages/about_app/about_app";
+import {MAIN_ROUTE} from "../utils/consts";
 import main from "../pages/main/main";
 
 export const routes = [
