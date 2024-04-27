@@ -1,5 +1,4 @@
-import * as React from 'react';
-import BottomNavigation from '@mui/material/BottomNavigation';
+import * as React from 'react';import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import {Link} from 'react-router-dom';
 import {NavRoutes} from "../../utils/consts";
