@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import {DEEP_BLUE, WHITE45} from "../../../utils/colors";
 import car from '../../../assets/main/step4/car.png'
 import hand from '../../../assets/main/step4/hand.png'
+import house from '../../../assets/main/step4/house.png'
+import beauty from '../../../assets/main/step4/beauty.png'
 import MarkText from "../../../components/UI/MarkText";
 import Ellipses from "../../../components/UI/Ellipses";
 
@@ -169,7 +171,7 @@ const Step4 = ({goToStep}) => {
                             <img
                                 width={120}
                                 height={'auto'}
-                                src={car}
+                                src={house}
                                 alt={'car'}
                                 style={{position: "absolute", right: 15, top: top}}
                             />
@@ -197,7 +199,7 @@ const Step4 = ({goToStep}) => {
                             <img
                                 width={120}
                                 height={'auto'}
-                                src={car}
+                                src={beauty}
                                 alt={'car'}
                                 style={{position: "absolute", right: 15, top: top}}
                             />
